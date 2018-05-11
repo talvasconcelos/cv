@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiago Vasconcelos</title>
+  <meta name="description" content="Tiago Vasconcelos, Web Development Résumé">
+  <meta name="author" content="@talvasconcelos">
 
   <link rel="stylesheet" href="style.css?v=1.0">
 
@@ -16,27 +17,250 @@
 </head>
 
 <body>
-  <section class="personal-info">
-    <h1>Tiago Vasconcelos</h1>
-    <h3>Front End Developer</h3>
-    <div class="social">
-      <ul>
-        <li>lorem</li>
-        <li>ipsum</li>
-        <li>lorem</li>
-        <li>ipsim</li>
-      </ul>
-    </div>
-  </section>
-  <hr>
-  <section class="container about">
-    <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit alias, eum laborum distinctio accusantium possimus minima ratione eos dignissimos eaque fuga voluptatem obcaecati optio similique nam officia molestias voluptatum repellat laboriosam, est qui. Eveniet ipsum dolorem impedit debitis iusto accusantium libero, a quos temporibus architecto expedita atque corporis at, beatae nobis laboriosam doloremque voluptas rerum doloribus quisquam minus autem minima velit. Sunt esse soluta et deleniti omnis voluptas eum, totam atque, repudiandae doloremque cum in facere qui tempore aut libero odit nam vel praesentium dolores minus. Tempora provident, quos blanditiis, sint est, quo a, modi nemo voluptate pariatur quae nostrum!</p>
-  </section>
-  <section class="container side-projects">
+ <div class="page">
+    <section class="personal-info">
+      <div class="name">
+        <h1>Tiago Vasconcelos</h1>
+        <h3>Front End Developer</h3>
+        <p>Lisboa, Portugal</p>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <h5>Email</h5>
+            <p><a href="mailto: talvasconcelos@gmail.com">talvasconcelos@gmail.com</a></p>
+          </li>
+          <li>
+            <h5>GitHub</h5>
+            <p><a href="https://github.com/talvasconcelos">talvasconcelos</a></p>
+          </li>
+          <li>
+            <h5>Linkedin</h5>
+            <p><a href="http://pt.linkedin.com/in/tiago-vasconcelos-8b069243">Tiago Vasconcelos</a></p>
+          </li>
+          <li>
+            <h5>Twitter</h5>
+            <p><a href="http://twitter.com/talvasconcelos">@talvasconcelos</a></p>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </section>
+    <section class="container about">
+      <h2>About Me</h2>
+      <p>I'm a 37 year old web developer from Lisbon, Portugal. I'm a geeky tech enthusiast that loves to code. My focus and interest has been the front-end development. I taught myself HTML and CSS a few years ago and soon started to dig on JS/jQuery, it's been a non-stop learning process from there. I'm now focused on new technologies and frameworks like NodeJS, React, Preact, GraphQL. I'm a fast learner and like to learn new stuff, so i'm always researching about new technologies.</p>
+      <p>I also have some back-end development skills with NodeJS, Express, MongoDB. Have some basic knowledge on PHP that i needed to learn for a project.</p>
+    </section>
+  </div>
+  <div class="page">
+    <section class="container side-projects">
     <h2>Side Projects</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut qui, quis! Rem iusto laudantium ipsam, a sunt odio ducimus aliquid ea ullam blanditiis nisi sit itaque molestias. Perspiciatis tempore autem alias minus nostrum maxime doloribus possimus, molestias soluta mollitia quaerat officiis unde consectetur. Saepe iusto modi beatae, quos in quidem illum? Repellat tenetur dolorem vel, fugit, voluptate cupiditate minus tempora et. Alias eaque assumenda mollitia saepe aut pariatur distinctio minus neque nisi nihil unde nesciunt dolore, autem, suscipit ad, rem eum natus dignissimos similique! Harum sequi commodi architecto reiciendis tempora dolorum consequuntur, dolorem ad rerum eum nam ipsa adipisci dolore.</p>
+    <p>I'm a developer on my free time, so no experience at a professional level, yet. I have a few personal side projects that may count as my experience.</p>
+    <article>
+      <h3>Coin Market Scanner</h3>
+      <p>Coin Market Cap is a crypto alert system, currently only operating for Binance. The scanner reads candles from Binance at 15 minutes intervals. It takes the information and runs some technical indicators like Exponential Moving Average, Relative Strength Index, Money Flow Index, Relative Volume, etc... </p>
+      <ul>
+        <li>Responsabilities: Design, back-end, front-end</li>
+        <li>Technologies used: NodeJS, CSS</li>
+        <li>Frameworks: PreactJS, Styled Components</li>
+        <li>Website: <a href="https://coinmarketscanner.netlify.com/" target="_blank">Coin Market Scanner</a></li>
+        <li>GitHub: <a href="https://github.com/talvasconcelos/scanner_client" target="_blank">Repository</a></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Maître</h3>
+      <p>Maître is an online restaurant booking aplication. The goal was to browse, choose and book a table at a restaurant from one place. The app will also take care of payments at the end of the meal if the user has a Stripe account connected with the app.</p>
+      <ul>
+        <li>Responsabilities: Design, back-end, front-end</li>
+        <li>Technologies used: NodeJS, Express, MongoDB, Jade/Pug, Sass</li>
+        <li>Frameworks: KeystoneJS, MaterializeCSS, jQuery</li>
+        <li>Website: <a href="http://maitre.pt" target="_blank">Maître</a></li>
+        <li>GitHub: <a href="https://github.com/talvasconcelos/maitre" target="_blank">Repository</a></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Euromillions Predictions</h3>
+      <p>Fun project for learning React and get some hands on with array methods. The goal was to increase the odds of the game by discarding all sequential number combinations, all even or all odd, and a few other constrains. I managed to reduce the 2.118.760 possible combinations for the numbers, to less than 800.000. I also added a countdown for the next draw, that happens every Tuesday and Friday at 19:45 (UTC).</p>
+      <p>The calculations for the results took about 15 seconds in a desktop, so I opted to dump the results on about 40 (1Mb) .json files and feed a random one on every request.</p>
+      <ul>
+        <li>Responsabilities: Design, back-end, front-end</li>
+        <li>Technologies used: Javascript, CSS</li>
+        <li>Frameworks: ReactJS and styled-components</li>
+        <li>Website: <a href="http://euromillions.tvasconcelos.eu/" target="_blank">Euromillions</a></li>
+        <li>GitHub: <a href="https://github.com/talvasconcelos/millions" target="_blank">Repository</a></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Do Your Own Research</h3>
+      <p>I wanted to make a blog with content provided by a Github repository. Users can edit or add content by simply making a pull request on the repo. The blog is about cryptocurrencies and research done on them. Instead of having information scattered around the web, someone interested a particular token, can do their research on the blog.</p>
+      <p>I used Preact here, wanted to give it a try and it turned out to be a pleasant surprise. Easy to use if you're already familiar with React and lightweight. also the help from their slack was priceless.</p>
+      <ul>
+        <li>Responsabilities: Design, back-end, front-end</li>
+        <li>Technologies used: Javascript, CSS</li>
+        <li>Frameworks: PreactJS</li>
+        <li>Website: <a href="https://dyor.netlify.com/" target="_blank">DYOR</a></li>
+        <li>GitHub: <a href="https://github.com/talvasconcelos/dyor" target="_blank">Repository</a></li>
+      </ul>
+    </article>
+    <article>
+      <h3>Cakeness</h3>
+      <p>Small website I did for a cake design artist. We opted for having a budget estimate on the website that was a fun implementation.</p>
+      <ul>
+        <li>Responsabilities: Design, branding, front-end</li>
+        <li>Technologies used: Javascript, Jade/Pug, Sass</li>
+        <li>Frameworks: MaterializeCSS</li>
+        <li>Website: <a href="http://cakeness.pt/" target="_blank">Cakeness</a></li>
+      </ul>
+    </article>
   </section>
+  </div>
+  <div class="page">
+    <section class="container skills">
+      <h2>Skills</h2>
+      <p>I'm always trying to learn new skills and perfect the ones I have. My process of learning is by experimenting, failing and fixing... I go on Stackoverflow, Google, Github and try to engage the developers on Slack or Discord.</p>
+      <div class="grid">
+        <div class="col-2">
+        <h4>Coding Skills</h4>
+        <article>
+          <span class="graph" data-value="9" data-label="HTML/CSS">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="6" data-label="jQuery">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="8" data-label="JS/ES6">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="7" data-label="NodeJS">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="7" data-label="React/Preact">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="3" data-label="PHP">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+        </article>
+      </div>
+      <div class="col-2">
+        <h4>Language</h4>
+        <article>
+          <span class="graph" data-value="9" data-label="English">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="10" data-label="Portuguese">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+          <span class="graph" data-value="5" data-label="French">
+            <span class="graph__container">
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+              <span class="graph__item"></span>
+            </span>
+          </span>
+        </article>
+      </div>
+      </div>
+      <h2>Spare Time</h2>
+      <p>When i do have some spare time, I like to be with my family, wife and kids. I like to travel, read, watch TV. When the weather is nice, enjoy an afternoon at the beach.</p>
+    </section>
+  </div>
+  <a href="https://url-to-pdf-api.herokuapp.com/api/render?url=http://cv.tvasconcelos.eu&emulateScreenMedia=false" target="_blank" class="btn"><img src="assets/adobeacrobatreader.svg" alt=""></a>
   <script src="js/scripts.js"></script>
 </body>
 </html>
