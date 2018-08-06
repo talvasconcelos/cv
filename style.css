@@ -19,7 +19,7 @@ h6 {
 }
 
 h1, .h1 {
-  font-size: 3.38888889em;
+  font-size: 3.338em;
   line-height: 1.27868852em;
   margin-top: 0.42622951em;
   margin-bottom: 0.85245902em;
@@ -86,7 +86,7 @@ sub {
   margin: 0 auto;
 }
 
-.name h1 {
+.name h2{
   margin-bottom: 0;
 }
 .name h3 {
@@ -171,6 +171,12 @@ article {
 }
 
 @media screen and (min-width: 768px) {
+  .name .h2 {
+    font-size: 3.338em;
+    line-height: 1.27868852em;
+    margin-top: 0.42622951em;
+    margin-bottom: 0.85245902em;
+  }
   .social ul {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
